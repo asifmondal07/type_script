@@ -4,11 +4,13 @@ interface product{
     price: number;
     description: string;
     imageUrl: string;
-    category: string;
+    category : string;
 }
 
 function getProductDetails(product: product): string {
-    return `Product Name: ${product.name}, Price: ${product.price}, Description: ${product.description}`;
+    return `Product Name: ${product.name}, Price: $${product.price}, Description: ${product.description} , Image URL: ${product.imageUrl},
+    Category: ${product.category ? product.category : "Not specified"}`;
+
 }
 
 
