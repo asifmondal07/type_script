@@ -1,20 +1,19 @@
-interface product{
+interface Product{
     id: number;
     name: string;
     price: number;
     description: string;
     imageUrl: string;
-    category : string;
+    category?: string;
 }
 
-function getProductDetails(product: product): string {
-    return `Product Name: ${product.name}, Price: $${product.price}, Description: ${product.description} , Image URL: ${product.imageUrl},
-    Category: ${product.category ? product.category : "Not specified"}`;
-
+function getProductDetails(product: Product): string {
+    return `Product Name: ${product.name}, Price: $${product.price}, Description: ${product.description}, 
+    Image URL: ${product.imageUrl}, Category: ${product.category ? product.category : "Not specified"}`;
 }
 
 
-let product1: product = {
+let product1: Product = {
     id: 1,
     name: "Laptop",
     price: 1200,

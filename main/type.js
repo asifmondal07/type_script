@@ -1,7 +1,7 @@
 "use strict";
 function getProductDetails(product) {
-    return `Product Name: ${product.name}, Price: $${product.price}, Description: ${product.description} , Image URL: ${product.imageUrl},
-    Category: ${product.category ? product.category : "Not specified"}`;
+    return `Product Name: ${product.name}, Price: $${product.price}, Description: ${product.description}, 
+    Image URL: ${product.imageUrl}, Category: ${product.category ? product.category : "Not specified"}`;
 }
 let product1 = {
     id: 1,
