@@ -3,7 +3,7 @@ import {useState} from "react"
 
 interface Person {
   name:String,
-  age:Number,
+  age:number,
 }
 
 function Todo() {
@@ -19,6 +19,7 @@ function Todo() {
   }
   
   return (
+  <>
   <div>
     <form onSubmit={submitHandler}>
       <input 
@@ -36,6 +37,12 @@ function Todo() {
       <button type="submit">Add</button>
     </form>
   </div>
+ 
+  <div>
+    <p>Hey, { user.name ||" 'Enter Name Plz' " }  Your Age {user.age}</p>
+  </div>
+
+  </>
   
   
   )
