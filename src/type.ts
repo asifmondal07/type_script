@@ -22,4 +22,9 @@ let product1: Product = {
     category: "Electronics"
 };
 
-console.log(getProductDetails(product1))
+// console.log(getProductDetails(product1))
+function sumMath(a: number, b: number): number {
+    let sum=a + b;
+    return sum;
+}
+console.log(sumMath(5, 10));
