@@ -1,15 +1,26 @@
-
+import { useDispatch,useSelector } from "react-redux";
 import type { ProductsData } from '../../api/auth'
-import { useState } from 'react';
+import { useState,useEffect, use } from 'react';
+import {addTocart} from "../../store/authSlice";
 
 
 function PostCart({ id, title, image, price, description, category }: ProductsData) {
+    const dispatch = useDispatch();
+    
+    
+    
     
         const [isExpanded, setIsExpanded] = useState(false);
 
             const toggleDescription = () => {
              setIsExpanded((prev:boolean) => !prev);
             };
+
+            const handleAddToCart = () => {
+              dispatch(addTocart({ id, title, price, description, category, image: image.toString() }));
+              
+
+            }
   return (
      <div className='w-60 bg-amber-50 rounded-xl p-4 cursor-pointer hover:shadow-lg transition'>
          
@@ -35,8 +46,10 @@ function PostCart({ id, title, image, price, description, category }: ProductsDa
             </p>
             <p className='text-black-700 mt-3'>Category: {category}</p>
             <p className='text-black-700 mt-3'>Price: ${price}</p>
-            <button className='bg-blue-500 text-white px-4 py-2 roundedw-lg mt-4 hover:bg-blue-600 transition'>
-                Add to Cart 
+            <button 
+            onClick={handleAddToCart}
+            className={`mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors`}>
+            Add to Cart
             </button>
     </div>
   )

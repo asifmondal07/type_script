@@ -5,7 +5,7 @@ import App from './App.tsx'
 import { Provider } from 'react-redux'
 import Store from "./store/Store.ts"
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import { Login,Signiup,Home } from './pages/index.ts'
+import { Login,Signiup,Home,Cart } from './pages/index.ts'
 
 
 
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/cart',
+        element: <Cart />
       }
     ]
   }

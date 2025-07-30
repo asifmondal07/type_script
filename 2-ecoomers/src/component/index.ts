@@ -6,6 +6,7 @@ import Logoutbtn from "./Header/Logoutbtn";
 import Login from "./Login/Login.tsx";
 import Signiup from "./Signup/Signup.tsx";
 import PostCart from "./postcart/PostCart.tsx";
+import Cart from "./Cart/Cart.tsx";
 
 
-export { Buttons,Input, Container, Header, Logoutbtn ,Login, Signiup ,PostCart};
+export { Buttons,Input, Container, Header, Logoutbtn ,Login, Signiup ,PostCart, Cart};
