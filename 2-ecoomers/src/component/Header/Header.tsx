@@ -36,7 +36,8 @@ const  Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`relative px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition ${item.active ? 'text-blue-500' : 'text-gray-700'}`}
+                className={`relative px-4 py-2 bg-blue-500 hover:bg-blue-600
+                   text-white rounded-full transition ${item.active ? 'text-blue-500' : 'text-gray-700'}`}
                 onClick={() => {
                   if (item.active) {
                     navigate(item.path)

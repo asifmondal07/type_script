@@ -4,9 +4,12 @@ import { Container,PostCart } from "../component";
 import type { ProductsData } from "../api/auth";
 
 function Home() {
+  
     const [products, setProducts] = useState<ProductsData[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
+
+  
 
     
         useEffect(() => {
@@ -20,8 +23,7 @@ function Home() {
                 console.error(err);
                 setLoading(false);
             });
-        },[]
-    );
+        },[]);
     
   if (loading) {
     return (
