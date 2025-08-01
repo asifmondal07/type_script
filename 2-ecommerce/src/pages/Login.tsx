@@ -1,4 +1,4 @@
-import { Login as LoginComp } from "../component/index.ts"
+import { Login as LoginComp } from "../component/index.js"
 
 function Login() {
   return (

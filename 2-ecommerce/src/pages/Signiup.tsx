@@ -1,4 +1,4 @@
-import { Signiup as Register } from "../component/index.ts";
+import { Signiup as Register } from "../component/index.js";
 
 
 export default function Signiup() {

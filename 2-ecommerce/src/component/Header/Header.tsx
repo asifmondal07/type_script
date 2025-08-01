@@ -2,9 +2,9 @@
 import Container from "../Container/Container"
 import { useSelector } from "react-redux";
 import { useNavigate,Link } from "react-router-dom";
-import Logoutbtn from "./Logoutbtn.tsx"
+import Logoutbtn from "./Logoutbtn"
 import { useState } from "react";
-import {Cart} from "../index.ts";
+import {Cart} from "..";
 
 
 const  Header = () => {

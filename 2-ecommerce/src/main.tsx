@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import App from './App'
 import { Provider } from 'react-redux'
-import Store from "./store/Store.ts"
+import Store from "./store/Store"
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import { Login,Signiup,Home,Cart } from './pages/index.ts'
+import { Login,Signiup,Home,Cart } from './pages'
 
 
 

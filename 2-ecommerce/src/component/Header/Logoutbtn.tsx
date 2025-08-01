@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import {logout} from "../../store/authSlice.ts"
+import {logout} from "../../store/authSlice.js"
 
 function Logoutbtn() {
 
